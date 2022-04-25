@@ -10,7 +10,7 @@
 <body>
 
     <h1>Todas as tags estudadas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><!--quebra de linha--> Explicabo quas sint ut. Voluptatum facere suscipit libero distinctio provident ratione fuga dolores alias nesciunt nulla. Nisi deserunt aut repudiandae soluta. Corrupti.</p><hr><!--Linha horizontal-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><!--quebra de linha / lorem*5 aparecem 5 palavras--> Explicabo quas sint ut. Voluptatum facere suscipit libero distinctio provident ratione fuga dolores alias nesciunt nulla. Nisi deserunt aut repudiandae soluta. Corrupti.</p><hr><!--Linha horizontal-->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam qui illum doloremque. Ea ipsum tempore a doloremque iure odit, expedita accusamus accusantium ad nostrum eveniet fugiat nisi aliquam illum.
     </p>
 
@@ -52,6 +52,62 @@
     <h2>Abreviações</h2>
     <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
 
+    <h2>Listas</h2>
+    <h3>Listas ordenadas</h3>
+    <ol type="A" start=""><!--attributes: type, start and reversed. ctrl + espaço faz aparecer as opções-->
+        <li>Acordar</li> <!--o fechamento da tag 'li' é opcional-->
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+        <li>Trabalhar</li>
+        <li>Ir para a academia</li>
+    </ol>
+
+    <h3>Listas não ordenadas</h3>
+    <ul type="square"> <!--disc, circle and square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Queijo</li>
+        <li>Biscoito</li>
+        <li>Salame</li>
+        <li>Chiclete</li>
+    </ul>
+
+    <p>Livros</p>
+    <ul>
+        <li>Comprados</li>
+        <ol>
+            <li>Will</li>
+            <li>O pequeno príncipe</li>
+        </ol>
+        <li>Não comprados</li>
+        <ol>
+            <li>Promissed land</li>
+        </ol>
+    </ul>
+
+    <p>Lista de definição</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de páginas web</dd>
+        <dt>CSS</dt>
+        <dd>Lingragem para formatar páginas HTML</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+
+    <h2>Links externos</h2>
+    <p>Acesse o  <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" hreflang="pt" target="_blank" rel="external">canal do curso em vídeo</a></p><!--rel: qual é a natureza do destino-->
+
+    <p>Acesse um <a href="https://htmlreference.io/" target="_blank" rel="nofollow">site de referência sobre a HTML</a></p>
+
+    <h2>Links para download</h2>
+    <p>Baixe o material sobre a <a href="imagens/01 - História da Internet.pdf" target="_blank" type="application/pdf" download>História da Internet</a></p><!--para consultar o type de cada arquivo, visite https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    <p>Baixe o arquivo <a href="imagens/01 - História da Internet.rar" type="application/zip" download>zip</a></p>
+    <p>Baixe o <a href="imagens/html.png" download>ícone do HTML</a></p>
+
+    <p>Ir para o <a href="paginas/meuperfil.html" rel="next" hreflang="pt-br">meu perfil</a></p>
     
 </body>
 </html>
