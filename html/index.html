@@ -15,9 +15,13 @@
     </p>
 
     <h2>Adicionar emojis e imagens</h2>
-    <p>&#x1F439;</p>
-    <img src="imagens/html.png" alt="Logo html5">
-    <img src="https://www.iconsdb.com/icons/preview/orange/css-xxl.png" alt="ícone CSS">
+    <p>&#x1F439;</p> <!--obtenha mais emojis no site https://emojipedia.org/-->
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/html-p.png" type="image/png">
+        <source media="(max-width: 900px)" srcset="imagens/html-m.png" type="image/png">
+        <img src="imagens/html.png" alt="Logo html5">
+    </picture>
+        <img src="https://www.iconsdb.com/icons/preview/orange/css-xxl.png" alt="ícone CSS">
 
     <h2>Formatações de texto</h2>
     Lorem ipsum dolor sit,<strong><!--Tag para texto negrito e semântico--> amet consectetur adipisicing elit</strong>. Quia quas veritatis,<em><!--itálico semântico--> quis consectetur iste</em> blanditiis id dolore quaerat. <mark>Eveniet</mark> &nbsp;&nbsp;<!-- Marca texto; Espaço adicional (Symbol entities)--> ut magnam ab unde, consequatur optio ratione est odio quas culpa! <br>
@@ -25,9 +29,9 @@
     Eu moro na rua <address> José Cornélio dos Santos, 928</address>.
 
     <p>
-        <small>This content is licensed under my property.</small><br>
         <del>O texto pode ser lido mas deve ser desconsiderado pelo leitor</del><br>
         <ins>O texto deve ser lido com atenção.</ins><!--sublinhado-->
+        <small>This content is licensed under my property.</small><br>
     </p>
     <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
 
@@ -109,5 +113,23 @@
 
     <p>Ir para o <a href="paginas/meuperfil.html" rel="next" hreflang="pt-br">meu perfil</a></p>
     
+    <h2>Vamos trabalhar com áudios</h2>
+    <p>Adicionando músicas Mp3 de diferentes extenções</p>
+    <audio preload="metadata" controls><!-- metadata faz com que carregue inicialmente apenas os dados do áudio; loop para repetir-->
+        <source src="media/tellmethati.mp3" type="audio/mpeg"> <!--sempre colocar dois formatos: mp3 e ogg-->
+        <source src="media/tellmethati.ogg" type="audio/ogg">
+        <p>Não foi possível carregar o áudio. Por favor <a href="tellmethati.mp3" download>faça o download aqui</a></p>
+    </audio>
+
+    <h2>Veja só o vídeo abaixo</h2>
+    <video controls width="400px" poster="imagens/posterbiblioteca.jpg" autoplay muted><!--autoplay só funciona em conjunto com o muted-->
+        <source src="media/Biblioteca.mkv" type="video/mp4">
+        <source src="media/Biblioteca.webm" type="video/webm">
+        <source src="media/biblioteca.mp4" type="video/mp4">
+        <!--ordem de acordo com o tamanho do arquivo. Do menor para o maior; mp4 e webm obrigatórios-->
+    </video>
+
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/Ldl_CvMGmEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--para sites mais profissionais, o ideal seria usar o vímeo-->
+
 </body>
 </html>
